@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Visualize by TEMPLATED</title>
+		<title>Happy Birthday</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,8 +18,8 @@
 
 				<!-- Header -->
 					<header id="header">
-						<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-						<h1>This is a gallary for wang xiao</h1>
+						<span class="avatar"><img src="images/avatar1.jpeg" alt="" /></span>
+						<h1 style="font-family: cursive;font-variant-caps: normal;">A Memory for Wang Xiao</h1>
 						<!-- <ul class="icons">
 							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
@@ -35,38 +35,33 @@
 						<!-- Thumbnails -->
 							<section class="thumbnails">
 								<div id="div1">
-									<a href="images/fulls/01.jpg">
-										<img src="images/thumbs/01.jpg" alt="" />
-										<h3>Lorem ipsum dolor sit amet</h3>
-									</a>
-									<a href="images/fulls/02.jpg">
-										<img src="images/thumbs/02.jpg" alt="" />
-										<h3>Lorem ipsum dolor sit amet</h3>
-									</a>
-									</a>
+									<a>
+                                        <img src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/wx/IMG_1599.JPG" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">梵高 · 星空夜。</h5>
+                                    </a>
+                                    <a>
+                                        <img src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/wx/IMG_20190225_221545.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">Don't draw outside of the frame.</h5>
+                                    </a>
 								</div>
 								<div id="div2">
-									<a href="images/fulls/03.jpg">
-										<img src="images/thumbs/03.jpg" alt="" />
-										<h3>Lorem ipsum dolor sit amet</h3>
-									</a>
-									<a href="images/fulls/04.jpg">
-										<img src="images/thumbs/04.jpg" alt="" />
-										<h3>Lorem ipsum dolor sit amet</h3>
-									</a>
-									<a href="images/fulls/05.jpg">
-										<img src="images/thumbs/05.jpg" alt="" />
-										<h3>Lorem ipsum dolor sit amet</h3>
-									</a>
+									<a>
+                                        <img src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/wx/IMG_1593.JPG" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">实际上我们穿越大地，我们只是经历生活。</h5>
+                                    </a>
+                                    <a>
+                                        <img src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/wx/IMG_20190310_162014.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">Art is for everybody.</h5>
+                                    </a>
 								</div>
 								<div id="div3">
-									<a href="images/fulls/06.jpg">
-										<img src="images/thumbs/06.jpg" alt="" />
-										<h3>Lorem ipsum dolor sit amet</h3>
-									</a>
-									<a href="images/fulls/7.jpg" hidden="hidden">
-										<img src="images/thumbs/7.jpg" alt="" />
-										<h3>Lorem ipsum dolor sit amet</h3>
+									<a>
+                                        <img src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/wx/IMG_20190221_143013.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">人，诗意地栖居。</h5>
+                                    </a>
+                                    <a>
+                                        <img src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/wx/IMG_20190322_150642.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">诗和远方的田野。</h5>
                                     </a>
                                    
                                     
@@ -76,21 +71,16 @@
 
                     </section>
                     
-                    <td width="350">
-                        <img height="100" width="100" class="pimg" src="images/thumbs/06.jpg" />
-                        <img height="100" width="100" class="pimg" src="images/thumbs/06.jpg" />
-                        <img height="100" width="100" class="pimg" src="http://img2.imgtn.bdimg.com/it/u=61392142,3898643530&fm=27&gp=0.jpg" />
-                    </td>
 
-                    <div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
+                    <div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(33,33,33,0.92);filter:alpha(opacity=75);z-index:2;width:100%;height:100%;display:none;">
                         <div id="innerdiv" style="position:absolute;">
-                            <img id="bigimg" style="border:5px solid #fff;" src="" />
+                            <img id="bigimg" style="width: 100%; border-radius:6px" src="" />
                         </div>
                     </div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p>&copy;  All rights reserved by wx.</p>
+						<p onclick="btnclick()">&copy;  All rights reserved by WX.</p>
 					</footer>
 
 			</div>
@@ -107,11 +97,68 @@
 			<!-- my own js -->
             <script src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/utils/wx.js"></script>
             
-            <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+            <script src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/assets/js/jquery.foggy.min.js"></script>
 		
 			<!-- <script type='text/javascript' src='https://2-1300539574.cos.ap-chengdu.myqcloud.com/js/jquery.js'></script> -->
 			<script type="text/javascript">
-			// alert(data[3]['url']);
+            // alert(data[3]['url']);
+            
+
+
+
+            $(function(){
+                $(".pimg").click(function(){
+                    var _this = $(this);//将当前的pimg元素作为_this传入函数
+                    // $("#main").foggy({blurRadius: 4, opacity: 0.8,  cssFilterSupport: true });
+                    imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
+                    
+                    // $("#main").foggy({blurRadius: 6, opacity: 0.7,  cssFilterSupport: true });
+                });
+
+            });
+            
+            function imgShow(outerdiv, innerdiv, bigimg, _this){
+                var src = _this.attr("src");//获取当前点击的pimg元素中的src属性
+                $(bigimg).attr("src", src);//设置#bigimg元素的src属性
+                /*获取当前点击图片的真实大小，并显示弹出层及大图*/
+                $("<img/>").attr("src", src).load(function(){
+                    var windowW = $(window).width();//获取当前窗口宽度
+                    var windowH = $(window).height();//获取当前窗口高度
+                    var realWidth = this.width;//获取图片真实宽度
+                    var realHeight = this.height;//获取图片真实高度
+                    var imgWidth, imgHeight;
+                    var scale = 0.75;//缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+                    if(realHeight>windowH*scale) {//判断图片高度
+                        imgHeight = windowH*scale;//如大于窗口高度，图片高度进行缩放
+                        imgWidth = imgHeight/realHeight*realWidth;//等比例缩放宽度
+                        if(imgWidth>windowW*scale) {//如宽度扔大于窗口宽度
+                            imgWidth = windowW*scale;//再对宽度进行缩放
+                        }
+                    } else if(realWidth>windowW*scale) {//如图片高度合适，判断图片宽度
+                        imgWidth = windowW*scale;//如大于窗口宽度，图片宽度进行缩放
+                        imgHeight = imgWidth/realWidth*realHeight;//等比例缩放高度   
+                    } else {//如果图片真实高度和宽度都符合要求，高宽不变
+                        imgWidth = realWidth;
+                        imgHeight = realHeight;
+                    }
+            
+                    $(bigimg).css("width",imgWidth);//以最终的宽度对图片缩放
+                    var w = (windowW-imgWidth)/2;//计算图片与窗口左边距
+                    var h = (windowH-imgHeight)/2;//计算图片与窗口上边距
+                    $(innerdiv).css({"top":h, "left":w});//设置#innerdiv的top和left属性
+                    $(outerdiv).fadeIn("slow");//淡入显示#outerdiv及.pimg
+                    $("#main").foggy({blurRadius: 4, opacity: 0.8,  cssFilterSupport: true });
+                });
+            
+                $(outerdiv).click(function(){//再次点击淡出消失弹出层
+                    $(this).fadeOut("fast","swing");
+                    $("#main").foggy(false);
+                });
+            
+            }
+            
+
+
 
 			function getElementTop(element){
 		　　　　var actualTop = element.offsetTop;
@@ -126,15 +173,15 @@
 
             function getLowestDiv(){
                 var obj1 = document.getElementById("div1");
-                var b1 = obj1.children[cnt1];
+                var b1 = obj1.lastElementChild;
                 var h1 = getElementTop(b1);
 
                 var obj2 = document.getElementById("div2");
-                var b2 = obj2.children[cnt2];
+                var b2 = obj2.lastElementChild;
                 var h2 = getElementTop(b2);
 
                 var obj3 = document.getElementById("div3");
-                var b3 = obj3.children[cnt3];
+                var b3 = obj3.lastElementChild;
                 var h3 = getElementTop(b3);
 
                 if(h1 <= h2 && h1<=h3) return 1;
@@ -145,53 +192,39 @@
 
             var totalcnt = data.length;
             var nowcnt = 0;
-            var cnt1=0, cnt2=0, cnt3=0;
-            var pos1=0, pos2=0, pos3=0;
+            // var cnt1=0, cnt2=0, cnt3=0;
+            // var pos1=0, pos2=0, pos3=0;
             var preurl = "https://2-1300539574.cos.ap-chengdu.myqcloud.com/wx/"
-            // flush();
-
-            function initPics(num){
-                var s = "<a href=\"images/fulls/07.jpg\" hidden=\"hidden\">\n" +
-                "\t\t\t\t\t\t\t\t\t\t<img src=\"images/thumbs/7.jpg\" alt=\"\"/>\n" +
-                "\t\t\t\t\t\t\t\t\t\t<h3 hidden=\"hidden\"></h3>\n" +
+              
+            function loadPics(num){
+                for(var j=0; j<num; j++){
+                    if(nowcnt < totalcnt){
+                        var s = "<a>\n" +
+                "                                        <img src=\""+ preurl+ data[nowcnt]['url'] +"\" alt=\"\" class=\"pimg\"/>\n" +
+                "                                        <h5 style=\"margin-top: 0.9em;\">"+ data[nowcnt]['notes']+ "</h5>\n" +
                 "                                    </a>";
-                for(var i=0; i<num; i++){
-                    var obj = document.getElementById("div1");
-                    $("#div1").append(s);
-                
-                    var obj = document.getElementById("div2");
-                    $("#div2").append(s);
-            
-                    var obj = document.getElementById("div3");
-                    $("#div3").append(s);
 
+                        var i = getLowestDiv();
+                        if(i==1){
+                            var obj = document.getElementById("div1");
+                            $("#div1").append(s);
+                        }
+                        else if(i==2){
+                            var obj = document.getElementById("div2");
+                            $("#div2").append(s);
+                        }else{
+                            var obj = document.getElementById("div3");
+                            $("#div3").append(s);
+                        }
+                        nowcnt += 1;
+                    }
+                   
                 }
 
-            }
-            initPics(4);
-            
-            function loadPics(num){
-                flush();
-                
-            }
-            function flush(){
-                var	$window = $(window),
-                $body = $('body'),
-                $wrapper = $('#wrapper');
-
-                $('.thumbnails').poptrox({
-                    onPopupClose: function() { $body.removeClass('is-covered'); },
-                    onPopupOpen: function() { $body.addClass('is-covered'); },
-                    baseZIndex: 10001,
-                    useBodyOverflow: false,
-                    usePopupEasyClose: true,
-                    overlayColor: '#000000',
-                    overlayOpacity: 0.75,
-                    popupLoaderText: '',
-                    fadeSpeed: 500,
-                    usePopupDefaultStyling: false,
-                    windowMargin: (skel.breakpoint('small').active ? 5 : 50)
-                });
+                $(".pimg").click(function(){
+                    var _this = $(this);//将当前的pimg元素作为_this传入函数
+                    imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
+                });   
             }
             function sleep(n){
                 var start = new Date().getTime();
@@ -203,14 +236,19 @@
 				$(window).scroll(function(){
 				if($(document).scrollTop()>=$(document).height()-$(window).height()){
 					// alert("jjj");
-                    loadPics(2);
-                    // sleep(500);
+                    loadPics(6);
+                    sleep(500);
 				}
 				})
 			})
+
+            function btnclick(){
+                loadPics(4);
+                sleep(500);
+            }
             </script>
             
-            <script src="assets/js/main.js"></script>
+            <!-- <script src="assets/js/main.js"></script> -->
             <script src="assets/js/picpopup.js"></script>
 
 	</body>

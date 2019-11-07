@@ -80,10 +80,10 @@ theme: fexo
 ## Docs: https://hexo.io/docs/deployment.html
 menu:
   home: /      
-  category: /category
-  # archives: /archives
-  tag: /tag     
-  about: /about
+  # category: /category
+  archives: /archives
+  # tag: /tag     
+  # about: /about
   
 
 deploy:

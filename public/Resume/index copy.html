@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	Visualize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Visualize by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+						<h1>This is a gallary for wang xiao</h1>
+						<!-- <ul class="icons">
+							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+							<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul> -->
+					</header>
+
+				<!-- Main -->
+					<section id="main">
+
+						<!-- Thumbnails -->
+							<section class="thumbnails">
+								<div id="div1">
+									<a>
+                                        <img src="images/thumbs/06.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">Lorem ipsum dolor sit amet</h5>
+                                    </a>
+                                    <a>
+                                        <img src="images/thumbs/06.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">Lorem ipsum dolor sit amet</h5>
+                                    </a>
+								</div>
+								<div id="div2">
+									<a>
+                                        <img src="images/thumbs/06.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">Lorem ipsum dolor sit amet</h5>
+                                    </a>
+                                    <a>
+                                        <img src="images/thumbs/06.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">Lorem ipsum dolor sit amet</h5>
+                                    </a>
+								</div>
+								<div id="div3">
+									<a>
+                                        <img src="images/thumbs/06.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">Lorem ipsum dolor sit amet</h5>
+                                    </a>
+                                    <a>
+                                        <img src="images/thumbs/06.jpg" alt="" class="pimg"/>
+                                        <h5 style="margin-top: 0.9em;">Lorem ipsum dolor sit amet</h5>
+                                    </a>
+                                   
+                                    
+                                    
+								</div>
+							</section>
+
+                    </section>
+                    
+
+                    <div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
+                        <div id="innerdiv" style="position:absolute;">
+                            <img id="bigimg" style="border:5px solid #fff;" src="" />
+                        </div>
+                    </div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>&copy;  All rights reserved by wx.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/assets/js/jquery.min.js"></script>
+            <script src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/assets/js/jquery.poptrox.min.js"></script>
+            <!-- <script src="https://cdn.bootcss.com/jquery.poptrox/2.5.1/jquery.poptrox.js"></script> -->
+			<script src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/assets/js/skel.min.js"></script>
+            
+           
+			
+
+			<!-- my own js -->
+            <script src="https://2-1300539574.cos.ap-chengdu.myqcloud.com/utils/wx.js"></script>
+            
+            <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+		
+			<!-- <script type='text/javascript' src='https://2-1300539574.cos.ap-chengdu.myqcloud.com/js/jquery.js'></script> -->
+			<script type="text/javascript">
+			// alert(data[3]['url']);
+
+			function getElementTop(element){
+		　　　　var actualTop = element.offsetTop;
+		　　　　var current = element.offsetParent;
+		　　　　while (current !== null){
+		　　　　　　actualTop += (current.offsetTop+current.clientTop);
+		　　　　　　current = current.offsetParent;
+		　　　　}
+		　　　　return actualTop;
+        　　}
+            
+
+            function getLowestDiv(){
+                var obj1 = document.getElementById("div1");
+                var b1 = obj1.children[cnt1];
+                var h1 = getElementTop(b1);
+
+                var obj2 = document.getElementById("div2");
+                var b2 = obj2.children[cnt2];
+                var h2 = getElementTop(b2);
+
+                var obj3 = document.getElementById("div3");
+                var b3 = obj3.children[cnt3];
+                var h3 = getElementTop(b3);
+
+                if(h1 <= h2 && h1<=h3) return 1;
+                if(h2 < h1 && h2<h1) return 2;
+                if(h3 < h1 && h3<h1) return 3;
+                else return 1;
+            }
+
+            var totalcnt = data.length;
+            var nowcnt = 0;
+            // var cnt1=0, cnt2=0, cnt3=0;
+            // var pos1=0, pos2=0, pos3=0;
+            var preurl = "https://2-1300539574.cos.ap-chengdu.myqcloud.com/wx/"
+            // flush();
+
+           
+           
+            
+            function loadPics(num){
+                for(var i=0; i<num; i++){
+                    if(nowcnt < totalcnt){
+                        var s = "<a>\n" +
+                "                                        <img src=\""+ preurl+ data[nowcnt]['url'] +"\" alt=\"\" class=\"pimg\"/>\n" +
+                "                                        <h5 style=\"margin-top: 0.9em;\">"+ data[nowcnt]['notes']+ "</h5>\n" +
+                "                                    </a>";
+                        var obj = document.getElementById("div1");
+                        $("#div1").append(s);
+                    
+                        var obj = document.getElementById("div2");
+                        $("#div2").append(s);
+                
+                        var obj = document.getElementById("div3");
+                        $("#div3").append(s);
+                        nowcnt += 1;
+                    }
+                   
+
+                }
+                $(".pimg").click(function(){
+                    var _this = $(this);//将当前的pimg元素作为_this传入函数
+                    imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
+                });   
+            }
+            function sleep(n){
+                var start = new Date().getTime();
+                while(true){
+                    if(new Date().getTime() - start > n) break;
+                }
+            }
+			$(document).ready(function(){
+				$(window).scroll(function(){
+				if($(document).scrollTop()>=$(document).height()-$(window).height()){
+					// alert("jjj");
+                    loadPics(4);
+                    // sleep(500);
+				}
+				})
+			})
+            </script>
+            
+            <!-- <script src="assets/js/main.js"></script> -->
+            <script src="assets/js/picpopup.js"></script>
+
+	</body>
+</html>
