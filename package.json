@@ -22,7 +22,7 @@
     "hexo-server": "^0.3.3"
   },
   "devDependencies": {
-    "acorn": "^6.0.0",
+    "acorn": "^6.4.1",
     "acorn-jsx": "^5.0.1",
     "hexo-search": "^1.0.4"
   }
